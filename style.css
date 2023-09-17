@@ -5,32 +5,31 @@ body {
 
 .header {
   background-color: rgb(50, 68, 82);
-  height: 100vh;
-  /* background: url(images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  */
+  height: 130vh;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 5%;
 }
 .header-content {
   display: flex;
   align-items: center;
 }
 .header img {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
+  border-radius: 20px;
 }
 .logo-content {
-  color: #fff;
+  color: rgb(190, 185, 185);
   text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 5px;
 }
 
 .header ul {
@@ -41,37 +40,59 @@ body {
 }
 .header ul li {
   list-style: none;
-  padding: 6px;
+  padding: 8px;
   font-size: 12px;
-
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
+.tooltip,
+.tooltip2 {
+  position: absolute;
+  width: 45px;
+  opacity: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+.tooltip2 {
+  width: 90px;
+}
+.tooltip:hover,
+.tooltip2:hover {
+  opacity: 1;
+  transition: opacity 0.15s;
+}
+
 .header ul a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: rgb(253, 250, 250);
 }
 
 .side-bar {
   position: fixed;
-
   left: 0;
   right: 0;
-  top: 80px;
+  top: 100px;
   width: 100px;
-  color: #fff;
+  color: rgb(190, 185, 185);
   bottom: 0;
   padding-left: 50px;
+  font-size: 12px;
 }
 
 .side-bar .fa-brands {
   padding: 6px;
 }
 
+.fa-twitter {
+  color: #fff;
+}
 .side-bar-menu {
   top: -30px;
   position: relative;
   width: 70px;
+  letter-spacing: 2px;
   white-space: nowrap;
   -ms-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -84,4 +105,50 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 300px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  place-items: center;
+  margin-left: 50px;
+}
+.container img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.container-hero {
+  padding-left: 25%;
+  padding-bottom: 50%;
+  text-align: center;
+}
+.hero {
+  color: #fff;
+  font-style: italic;
+  font-size: 60px;
+}
+.container p {
+  color: rgb(190, 185, 185);
+  width: 300px;
+  line-height: 1.5;
+  padding-left: 40px;
+}
+.container-button {
+  text-align: center;
+  margin-top: 50px;
+}
+.container button {
+  border: 1px solid white;
+  padding: 6px 30px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  background-color: rgb(50, 68, 82);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.container button:hover {
+  background-color: rgb(69, 82, 92);
 }
