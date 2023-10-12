@@ -20,55 +20,35 @@
     <nav>
       <div class="content">
         <img
-          class="image"
+          class="image d-none d-md-block"
           src="
 https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/235/original/download.png?1695671540"
           alt=" A logo with a fork image"
         />
-        <div class="logo-content">Delicious Meal</div>
+        <div class="logo-content d-none d-md-block">Delight Taste</div>
       </div>
 
       <ul>
-        <li>
-          <a href="#">Home</a>
-          <div class="tooltip">
-            <hr />
-          </div>
+        <li class="active">
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#">about</a>
-          <div class="tooltip">
-            <hr />
-          </div>
+          <a href="#about">about</a>
         </li>
+
         <li>
-          <a href="#">service</a>
-          <div class="tooltip">
-            <hr />
-          </div>
-        </li>
-        <li>
-          <a href="#">Menu</a>
-          <div class="tooltip">
-            <hr />
-          </div>
+          <a href="#important">Menu</a>
         </li>
         <li>
           <a href="#">Reservation</a>
-          <div class="tooltip2">
-            <hr />
-          </div>
         </li>
         <li>
-          <a href="#">contact</a>
-          <div class="tooltip">
-            <hr />
-          </div>
+          <a href="#contact">contact</a>
         </li>
       </ul>
     </nav>
 
-    <div class="side-bar">
+    <div class="side-bar d-none d-md-block">
       <div class="side-bar-icons">
         <div class="side-bar-menu">Food Delivery</div>
         <div>&#124;</div>
@@ -80,23 +60,26 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/235/origina
 
     <header class="skewid">
       <div class="container">
-        <div class="row">
-          <div class="col container-hero">
+        <div class="header--grid">
+          <div>
             <h1 class="hero">Quality and Taste</h1>
-
             <p class="content-paragraph">
               We're completely independent prading ourself on appetizing healthy
               and modern food
             </p>
             <div class="button-content">
-              <button class="view-button">view menu</button>
+              <a href="#important">
+                <button class="view-button">view menu</button>
+              </a>
             </div>
           </div>
-          <div class="col image-toast">
+
+          <div class="image-toast">
             <img
               class="container-image img-fluid"
               src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/868/original/joseph-gonzalez-zcUgjyqEwe8-unsplash-removebg-preview_%281%29.png?1696337366"
+
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/979/original/pexels-chan-walrus-958545.jpg?1696424639"
               alt=" A bowl of french toast"
             />
           </div>
@@ -132,7 +115,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/241/origina
             alt="Bowl of Salad"
           />
         </div>
-        <div class="section-content">
+        <div class="section-content" id="about">
           <h2><span class="h2">Discover </span>Our Story</h2>
           <p class="section-paragraph1">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
@@ -156,7 +139,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/241/origina
     <main>
       <div class="container">
         <div class="main-section">
-          <div class="main-content p-2">
+          <div class="main-content p-2" id="important">
             View <span class="main-span">Menu</span>
           </div>
           <div class="main-paragraph mt-2">
@@ -166,7 +149,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/241/origina
           </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-5 justify-content-center">
           <div class="col-md-3 main-col">
             <div class="main-image-card">
               <img
@@ -258,16 +241,33 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/896/origina
 
       <div class="mt-4">
         <div class="image-reservation">
-          <h3 class="resevation-text">
-            Reserve <span class="reservertion"> a Table </span>
-          </h3>
+          <div class="resevation-container">
+            <h3 class="resevation-text">
+              Reserve a
+              <span class="reservertion"> Table </span>
+              and get
+              <span class="reservertion"> order </span>
+              for
+            </h3>
+            <p class="reservation__paragraph">
+              Delight delivery, exactly how you want it
+            </p>
+            <p class="reservation__paragraph">
+              Order from home and fill your cart with fresh foods and delight
+            </p>
+            <div class="text-center mt-5">
+              <button class="view-button">
+                <a href="#" class="veiw-buttton-link"> Make your order</a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="card--body">
         <div class="card testimonial">
-          <div class="row">
-            <div class="col testimonial-image">
+          <div class="testimonial-grid">
+            <div class="testimonial-image">
               <img
                 class="testimonial-image-container"
                 src="
@@ -282,69 +282,100 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/904/origina
                 />
               </div>
             </div>
-            <div class="col">
-              <blockquote class="testimonial-quote">
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
-                molestias quod nesciunt dicta mollitia voluptates ullam tempore
-                odio sit alias, consequuntur neque natus repellat eligendi
-                ducimus aperiam? Mollitia, aspernatur esse."
-              </blockquote>
-            </div>
+
+            <blockquote class="testimonial-quote">
+              <p class="quote__test">
+                "Hi, My Name is Adam a culinary maestro with a passion for
+                creating gastronomic delights that tantalize the taste buds and
+                ignite the senses. With 10 years of culinary experience and an
+                unwavering dedication to the art of cooking, Adam is a true
+                culinary virtuoso. my culinary journey began in small resturant
+                with my mom in versin in italy, and it has been nothing short of
+                extraordinary ever since. What truly sets us apart is signature
+                dishes, we believes in our culinary commitment to using only the
+                freshest, locally-sourced ingredients and a relentless pursuit
+                of culinary innovation. With an impressive resume that includes
+                stints at renowned restaurants such as Delight Taste and has
+                earned accolades, awards, and the respect of peers in the
+                culinary world. she is not only a master in the kitchen but also
+                a leader who excels in inspiring and leading our team to
+                culinary excellence. But it's not just the kitchen where Delight
+                Taste shines; she is dedicated to providing an unforgettable
+                dining experience for every guest, with a focus on attention to
+                detail, creativity, and impeccable service".
+              </p>
+              <div class="quote__content">
+                <img class="testimonial-line" src="images/line.svg" alt="" />
+                <h4 class="quote__oraganization">Adam Scort</h4>
+                <p class="media">The chef</p>
+              </div>
+            </blockquote>
           </div>
         </div>
       </div>
+
+      <footer>
+        <div class="footer-main container" id="contact">
+          <div class="footer-image">
+            <img
+              class="header-image img-fluid"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/235/original/download.png?1695671540"
+              alt=""
+            />
+            <p class="footer-main-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+              maxime autem molestiae. Mollitia, deleniti eaque tempore dicta,
+            </p>
+          </div>
+
+          <div class="footer-names">
+            Name
+            <div class="footer-names-2">
+              <div>About</div>
+              <div>Menu</div>
+              <div>Reservation</div>
+              <div>Contact</div>
+            </div>
+          </div>
+
+          <div class="footer-names">
+            Contact Us
+            <div class="footer-names-2">
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <span class="footer-main-span"> +234083344589</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-envelope"></i>
+                <span class="footer-main-span"> osedee101@gmail.com</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-location-pin"></i>
+                <span class="footer-main-span"
+                  >22 brown street London West</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-names">
+            Sign up For News
+            <div class="footer-main-div">
+              <input type="text" placeholder="Email" />
+              <button class="footer-main-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
-    <footer>
-      <div class="footer-main">
-        <div class="footer-image">
-          <img
-            class="header-image"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/235/original/download.png?1695671540"
-            alt=""
-          />
-          <p class="footer-main-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-            maxime autem molestiae. Mollitia, deleniti eaque tempore dicta,
-          </p>
-        </div>
-
-        <div class="footer-names">
-          Name
-          <div class="footer-names-2">
-            <div>About</div>
-            <div>Service</div>
-            <div>Menu</div>
-            <div>Reservation</div>
-            <div>Contact</div>
-          </div>
-        </div>
-
-        <div class="contact-names">
-          Contact Us
-          <div class="footer-names-2">
-            <div>
-              <i class="fa-solid fa-phone"></i>
-              <span class="footer-main-span"> +234083344589</span>
-            </div>
-            <div>
-              <i class="fa-regular fa-envelope"></i>
-              <span class="footer-main-span"> osedee101@gmail.com</span>
-            </div>
-            <div>
-              <i class="fa-solid fa-location-pin"></i>
-              <span class="footer-main-span">22 brown street London West</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          Sign up For News
-          <div class="footer-main-div">
-            <button class="footer-main-button">Your email</button>
-            <button class="footer-main-button">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <script>
+      let collapsibles = document.querySelectorAll(".collapsible");
+      collapsibles.forEach((item) =>
+        item.addEventListener("click", function () {
+          this.classList.toggle("collapsible--expended");
+        })
+      );
+    </script>
   </body>
 </html>
