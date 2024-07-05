@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --main-color: rgb(0, 0, 0);
   --primary-color: #b9c3cf;
   --button-color: rgb(255, 52, 0);
@@ -483,6 +483,11 @@ footer .header-image {
 .footer-main-span {
   padding: 10px;
 }
+
+.name-info:hover {
+  color: red;
+  text-decoration: underline;
+}
 .footer-main-div {
   margin-top: 20px;
 }
@@ -504,9 +509,7 @@ footer .header-image {
   nav ul li {
     font-size: 10px;
   }
-  header {
-    height: 70vh;
-  }
+
   .header--grid {
     grid-template-columns: 1fr;
   }
@@ -631,3 +634,4 @@ footer .header-image {
     justify-content: center;
   }
 }
+*/
