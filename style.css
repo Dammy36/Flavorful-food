@@ -1,4 +1,4 @@
-/*:root {
+:root {
   --main-color: rgb(0, 0, 0);
   --primary-color: #b9c3cf;
   --button-color: rgb(255, 52, 0);
@@ -141,7 +141,6 @@ header .container-image {
   line-height: 1.2;
   margin: 20px 0 50px;
   letter-spacing: 1px;
-
   font-size: 20px;
 }
 .button-content {
@@ -227,17 +226,15 @@ main {
   margin-top: 30px;
   color: #fff;
 }
-main .container {
-  margin-top: 30px;
-}
 
 .main-section {
   text-align: center;
-  margin-bottom: 10%;
+  margin-top: 10%;
 }
 .main-content {
   font-style: italic;
   font-size: 25px;
+  padding-top: 50px;
 }
 
 .main-span {
@@ -300,7 +297,10 @@ main p {
   background-size: cover;
   background-attachment: fixed;
   height: 50vh;
-  margin-top: 40px;
+}
+
+.Reservation-container {
+  margin-top: 70px;
 }
 
 .resevation-text {
@@ -317,11 +317,9 @@ main p {
   padding-left: 10px;
 }
 
-.reservation__paragraph {
-  font-size: 15px;
-  word-spacing: 2px;
-  color: #fff;
-  line-height: 1.5;
+.main-paragraph {
+  max-width: 600px;
+  margin: 0 auto;
 }
 .veiw-buttton-link {
   color: #fff;
@@ -330,9 +328,11 @@ main p {
 
 .card--body {
   margin: 60px;
+  padding: 50px;
 }
 .card {
   box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.15);
+  background-color: black;
 }
 .testimonial {
   padding: 30px;
@@ -372,7 +372,7 @@ main p {
 .quote__test {
   font-size: 20px;
   font-style: italic;
-  color: #5c5577;
+  color: gray;
   line-height: 1.4;
 }
 
@@ -384,7 +384,7 @@ main p {
 }
 
 .quote__oraganization {
-  color: rgb(11, 11, 110);
+  color: white;
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -394,7 +394,7 @@ main p {
 }
 
 .media {
-  color: rgb(72, 72, 219);
+  color: white;
   opacity: 0.4;
   font-size: 15px;
   position: absolute;
@@ -421,6 +421,7 @@ footer,
 .footer-main-button {
   background-color: rgb(57, 57, 57);
   color: #fff;
+  padding: 3% 5%;
 }
 
 .footer-main {
@@ -433,6 +434,14 @@ footer,
   margin-top: 20px;
 }
 
+.footer-names {
+  font-size: 20px;
+}
+
+input {
+  outline: 0;
+}
+
 footer .header-image {
   width: 30px;
   height: 30px;
@@ -441,7 +450,7 @@ footer .header-image {
 }
 
 .footer-main-text {
-  width: 200px;
+  max-width: 300px;
   margin-top: 10px;
 }
 
@@ -493,6 +502,7 @@ footer .header-image {
 }
 .small {
   font-size: 10px;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -500,6 +510,7 @@ footer .header-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
   }
 
   nav ul {
@@ -518,8 +529,10 @@ footer .header-image {
   }
 
   .content-paragraph {
-    margin-top: 30px;
     font-size: 12px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
   }
 
   header .container {
@@ -532,9 +545,14 @@ footer .header-image {
     text-align: center;
   }
   .view-button {
-    padding: 15px 50px;
-    border-radius: 30px;
+    padding: 10px 20px;
     font-size: 12px;
+    margin-right: 50px;
+  }
+
+  main .container {
+    margin: 0 auto;
+    width: 50%;
   }
 
   .container-image {
@@ -561,13 +579,12 @@ footer .header-image {
   }
 
   .reservation__paragraph {
-    font-size: 15px;
-    word-spacing: 1px;
-    color: #fff;
-    line-height: 1.5;
+    text-align: center;
   }
+
   .card--body {
     margin-top: 50px;
+    padding: 0;
   }
 
   .testimonial-grid {
@@ -615,7 +632,16 @@ footer .header-image {
 
   .footer-names,
   .footer-main-text {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .footer-names {
     margin-top: 20px;
+  }
+
+  .header-img-small {
+    margin-bottom: 20px;
   }
 
   .footer-main-button {
@@ -633,5 +659,8 @@ footer .header-image {
     align-items: center;
     justify-content: center;
   }
+
+  .small {
+    text-align: center;
+  }
 }
-*/
